@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MBdesigns | Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --main-color: #00f7ff;
+      --bg-dark: #0f172a;
+      --text-light: #f1f5f9;
+      --glass-bg: rgba(255, 255, 255, 0.05);
+      --blur: blur(20px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 50px;
+      background-color: rgba(15, 23, 42, 0.8);
+      backdrop-filter: var(--blur);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: var(--main-color);
+      text-shadow: 0 0 10px var(--main-color);
+    }
+
+    nav a {
+      color: var(--text-light);
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 30px;
+      background: linear-gradient(to bottom, #0f172a 20%, #1e293b);
+    }
+
+    .hero h2 {
+      font-size: 54px;
+      color: white;
+      text-shadow: 0 0 15px var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--main-color);
+      text-shadow: 0 0 5px var(--main-color);
+    }
+
+    .glass-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 20px;
+      background: var(--glass-bg);
+      backdrop-filter: var(--blur);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      margin-bottom: 60px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .portfolio-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f1f1f1;
+  padding: 5px;
+}
+
+
+    .portfolio-item p {
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--main-color);
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      box-shadow: 0 0 20px var(--main-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MBdesigns</h1>
+  <nav>
+    <a href="#portfolio">Work</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Designs that Make You Look Twice</h2>
+  <p>Creative posters, menus, and digital art from Mandi Dabwali. Let your brand shine visually.</p>
+</section>
+
+<section id="portfolio">
+  <h2 class="section-title">My Portfolio</h2>
+  <div class="glass-section portfolio-grid">
+    <div class="portfolio-item">
+      <img src="WhatsApp Image 2025-06-19 at 2.35.08 PM.jpeg" alt="Design 1">
+      <p>Restaurant Flyer</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="WhatsApp Image 2025-06-20 at 12.08.13 PM.jpeg" alt="Design 2">
+      <p>Event Poster</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="WhatsApp Image 2025-06-20 at 1.33.15 PM.jpeg" alt="Design 3">
+      <p>Instagram Story Ad</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="glass-section">
+    <p>Hello! I'm Madhav from Mandi Dabwali, the creator behind MBdesigns. I specialize in creating eye-catching digital designs that help small businesses and creators stand out. Whether you need a poster, menu, or an Instagram ad — I’m here to make it memorable, minimal, and magical.</p>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">What I Offer</h2>
+  <div class="glass-section">
+    <ul>
+      <li>✔️ Poster Designs (Festivals, Events, Promotions)</li>
+      <li>✔️ Menu Cards for Restaurants</li>
+      <li>✔️ YouTube Thumbnails & Banners</li>
+      <li>✔️ Instagram Ads & Story Creatives</li>
+      <li>✔️ Business Cards, Flyers & More</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="glass-section contact" style="text-align:center">
+    <a href="https://wa.me/919876394763" target="_blank">📲 WhatsApp Me</a>
+    <a href="https://www.instagram.com/mb_designs.creative" target="_blank">📸 Instagram</a>
+    <a href="deepikab571@gmail.com@email.com">📩 Email</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 MBdesigns • Designed with 💙 in India</p>
+</footer>
+
+</body>
+</html>
